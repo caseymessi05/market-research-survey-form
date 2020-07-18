@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Market Research Survey</h1>
+    <p id="description">
+        Please take a few minutes to fill out this research Survey
+    </p>
+
+    <div id="body">
+
+        <form id="survey-form">
+            <!--Information Details of the User-->
+            <label id="name-label">
+                <p id="name">First Name:</p>
+            </label>
+            <input type="text" id="fname" placeholder="Enter First Name" required>
+            <p id="name">Last Name:</p>
+            <input type="text" id="lname" placeholder="Enter Last Name" required>
+
+            <label id="email-label" for="email">
+                <p id="email">Email Address:</p>
+            </label>
+            <input type="text" id="emailAdd" placeholder="Enter Email Address" required>
+
+            <label id="number-label" for="number">
+                <p id="age">Age:</p>
+            </label>
+            <input type="number" id="number" placeholder="Enter Age" required min="5" max="99">
+
+            <p>Gender:</p>
+            <select id="dropdown">
+                <option value="default">Male</option>
+                <option value="default">Femle</option>
+                <option value="default">Other</option>
+                <option value="default">Prefer not to say</option>
+            </select>
+
+            <p>Household Income:</p>
+
+            <input type="radio" name="income" value="0">$0 - $24,999</input><br>
+            <input type="radio" name="income" value="1">$25,000 - $49,000</input><br>
+            <input type="radio" name="income" value="2">$50,000 - $74,999</input><br>
+            <input type="radio" name="income" value="3">$75,000 - $99,999</input><br>
+            <input type="radio" name="income" value="4">$100,000 - $149,999</input><br>
+            <input type="radio" name="income" value="5">$150,000 or more</input>
+
+            <p>Education:</p>
+
+            <input type="radio" name="education" value="0">Less than HS diploma</input><br>
+            <input type="radio" name="education" value="1">Highschool</input><br>
+            <input type="radio" name="education" value="2">Some College</input><br>
+            <input type="radio" name="education" value="3">Bachelors Degree</input><br>
+            <input type="radio" name="education" value="4">Graduate Degree</input><br>
+
+            <p>Check any interests that you like:</p>
+
+            <input type="checkbox" name="interests" value="0">Arts and Entertainment</input><br>
+            <input type="checkbox" name="interests" value="0">Autos and Vehicles</input><br>
+            <input type="checkbox" name="interests" value="0">Beauty and Fitness</input><br>
+            <input type="checkbox" name="interests" value="0">Books and Literature</input><br>
+            <input type="checkbox" name="interests" value="0">Business and Industrial</input><br>
+            <input type="checkbox" name="interests" value="0">Computer and Electronics</input><br>
+            <input type="checkbox" name="interests" value="0">Food and Drink</input><br>
+            <input type="checkbox" name="interests" value="0">Games</input><br>
+
+            <textarea id="comment" rows="4" cols="40">
+            Add Your Comment Here
+        </textarea>
+
+            <input type="submit" id="submit" value="submit"></input>
+
+
+    </div>
+
+    </form>
+
+</body>
+
+</html>
